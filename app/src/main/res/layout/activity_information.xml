@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7E9A62"
+    tools:context=".Information">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Title for Anthracnose -->
+            <TextView
+                android:id="@+id/titleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Anthracnose"
+                android:textColor="#ECE637"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!-- Image Section for Anthracnose -->
+            <ImageView
+                android:id="@+id/anthracnoseImage"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_margin="16dp"
+                android:contentDescription="Image related to Anthracnose"
+                android:scaleType="fitCenter"
+                android:src="@drawable/disease"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/titleText" />
+
+            <!-- Treatment and Prevention Section -->
+            <TextView
+                android:id="@+id/treatmentPreventionText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="Anthracnose is one of the kind of fungus diseases caused by Colletotrichum gloeosporioides, which infects mango leaves, fruits, and flowers. Dark sunken spots or lesions appear on the leaves of the plant, resulting in defoliation and lowering of fruit yield plus poor quality fruits. High moisture confluence causes this disease, which badly affects the mango production if not checked.\n
+                \nTreatment:\n
+                \n>Copper-Based Sprays: \n       Regularly apply copper-based fungicides, such as Bordeaux mixture, to protect young leaves from fungal spores, especially during the rainy season.
+	            \n\n>Neem Oil Application: \n      Spray neem oil (70% concentration) every 7-14 days during the growing season to create a protective barrier and inhibit fungal growth.
+	            \n\n>Leaf Removal: \n      Remove and destroy severely infected leaves by burning or burying them to limit the spread of fungal spores.
+	            \n\n>Fungicidal Treatments During Flowering: \n       Apply systemic fungicides like Carbendazim during the early flowering stage to prevent infection through small leaf spots.
+	            \n\n>Sulfur Dusting: \n       Apply sulfur dust on leaves in dry climates as a preventive measure against anthracnose.
+	            \n\n>Bordeaux Paste Application: \n       After pruning infected branches, apply a Bordeaux paste made of copper sulfate, lime, and water (1:2:6) to seal the cuts and prevent anthracnose entry.
+	            \n\n>Chemical Sprays: \n      Use Difenoconazole (30 ml per 100 liters of water), Thiophanate-methyl (200 grams per 100 liters), or Fosetyl aluminum (500 grams per 100 liters) to control anthracnose on leaves.
+	            \n\n>Rotating Fungicides: \n      Avoid using the same fungicide repeatedly to prevent resistance; alternate between fungicides for better effectiveness.
+	            \n\n>Contact and Systemic Fungicides: \n      Mix contact fungicides like copper-based solutions with systemic fungicides such as Thiophanate-methyl for deeper penetration and prevention.
+
+                \n\nPrevention:\n
+                \n>Pruning for Better Airflow: \n       Regularly prune trees (three times a year) to improve air circulation and reduce humidity, a key factor for anthracnose spread.
+	            \n\n>Proper Irrigation: \n       Avoid overhead irrigation that wets the leaves; use drip irrigation to keep leaves dry.
+	            \n\n>Sanitation: \n       Regularly remove fallen leaves from around the base of trees to prevent fungal spore accumulation.
+	            \n\n>Monitoring Leaf Symptoms: \n       Monitor leaves during susceptible periods for early signs of anthracnose; take immediate action when signs are visible on 3 out of 10 trees.
+	            \n\n>Leaf Nutrient Management: \n       Provide sufficient nutrients by applying organic compost or animal manure around the tree base two to three times per year.
+	            \n\n>Timely Pruning: Regularly \n       prune mango trees three times a year, especially before flowering, to improve airflow and light penetration.
+	            \n\n>Monitor Leaf Health: \n       During humid conditions, monitor leaves for anthracnose signs; initiate preventive action if spots are found on 3 out of 10 trees.
+	            \n\n>Avoid Overhead Irrigation: \n       Use drip irrigation to maintain soil moisture without increasing leaf moisture.
+	            \n\n>Remove Fallen Leaves: \n       Regularly dispose of fallen leaves to reduce fungal spread.
+	            \n\n>Cultural Practices: \n       Maintain good practices like proper tree spacing (2.5m x 2.5m for dwarf varieties, 5m x 5m for high-stem varieties) to enhance airflow.
+	            \n\n>Nutrient Management: \n       Apply organic fertilizers around the tree base to promote leaf health.
+	            \n\n>Disease Identification: \n       Differentiate anthracnose from other leaf spots to ensure accurate treatment; anthracnose has irregular, oval-shaped spots concentrated on one side of the leaf.
+	            \n\n>Use of Prochloraz and Thiabendazole: \n       Consider these fungicides to manage anthracnose effectively.
+	            \n\n>Alternative Treatments: \n       Explore the use of essential oils, botanical extracts, and oxalic acid where synthetic fungicides are restricted.
+	            \n\n>Orchard Sanitation: \n       Incorporate efficient orchard sanitation along with fungicide applications to reduce disease incidence.
+	            \n\n>Chlorothalonil and Copper-based Fungicides: \n       Apply these to new growth, especially during the rainy season, and repeat treatments every two weeks if conditions remain wet.
+
+                "
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/anthracnoseImage"
+                app:layout_constraintVertical_bias="0.089" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
